@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { authAPI, facilityAPI, bookingAPI, notificationAPI, staffAPI } from './api';
+const API_BASE =window.location.hostname==='localhost'
+? 'https://localhost:5000'
+: 'https://unilus-sports.onrender.com/';
 
 function App() {
     // ============================================================
