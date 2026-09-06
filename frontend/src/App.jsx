@@ -6,9 +6,7 @@ function App() {
     // ============================================================
     // STATE
     // ============================================================
-const API_BASE =window.location.hostname==='localhost'
-? 'https://localhost:5000'
-: 'https://unilus-sports.onrender.com/';
+
     const [user, setUser] = useState(null);
     const [page, setPage] = useState('login');
     const [loading, setLoading] = useState(false);
